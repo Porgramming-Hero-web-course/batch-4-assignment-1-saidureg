@@ -8,9 +8,9 @@
 
   const updateProfile = (
     profile: Profile,
-    updatedProperties: Partial<Profile>
+    updates: Partial<Profile>
   ): Profile => {
-    return { ...profile, ...updatedProperties };
+    return { ...profile, ...updates };
   };
 
   const myProfile: Profile = {
