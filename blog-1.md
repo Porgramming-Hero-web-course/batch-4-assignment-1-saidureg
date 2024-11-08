@@ -6,9 +6,9 @@ Union types in TypeScript allow us to define a variable or parameter that can ho
 
 ### Code Example
 
-let value: string | number;
-value = "Hello"; // valid
-value = 42; // valid
+let value: string | number; <br>
+value = "Hello"; // valid <br>
+value = 42; // valid <br>
 value = true; // Invalid
 
 ###Significance
@@ -24,12 +24,12 @@ An intersection type combines multiple types into a single type, representing th
 
 interface A {
 name: string;
-}
+} <br>
 interface B {
 age: number;
-}
+} <br>
 
-let person: A & B = { name: "Alice", age: 30 }; // valid
+let person: A & B = { name: "Alice", age: 30 }; // valid <br>
 let invalidPerson: A & B = { name: "Alice" }; // Error: Property 'age' is missing
 
 ###Significance
