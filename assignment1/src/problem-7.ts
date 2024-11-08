@@ -11,9 +11,10 @@
       this.year = year;
     }
 
-    getCarAge = (): number => {
-      const currentYear: number = 2024;
-      return currentYear - this.year;
+    getCarAge = (): string => {
+      const currentYear: number = new Date().getFullYear();
+      const carAge: number = currentYear - this.year;
+      return `${carAge} (assuming current year is ${currentYear})`;
     };
   }
 
